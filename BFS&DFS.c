@@ -45,6 +45,22 @@ int main(void) {
             printf("ERRO: Insira um vértice válido!\n");
             origin = -1;
         }
+
+         int destiny = -1;
+      while(destiny == -1){
+      printf("Insira o vértice que você deseja buscar: ");
+      scanf("%d", &destiny);
+
+      if(destiny >= n || destiny < 0){
+          printf("ERRO: Insira um vértice válido!\n");
+          destiny = -1;
+        }
+    }
+    
+  //bfs(v);
+  
+
+  return 0;
     }
 
 
