@@ -16,3 +16,20 @@ void bfs(int v){
     }
   }
 }
+
+int main(void) {
+  int v;
+  printf("Digite o numero de vertice: \n");
+  scanf("%d",&n);
+  printf("Digite a matrice adjacencia: \n");
+
+  for( i=0; i<n; i++){
+    for( j=0 ; j<n; j++){
+      scanf("%d",&a[i][j]);
+    }
+  }
+  
+
+
+
+}
