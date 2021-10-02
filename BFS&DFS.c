@@ -28,7 +28,14 @@ int main(void) {
       scanf("%d",&a[i][j]);
     }
   }
-  
+  printf("Digite a matrice inicial: \n");
+  scanf("%d",&v);
+  printf("Lista dos nodos: \n");
+  for( i=0; i<n; i++){
+   // if(visitado[i])
+    printf("%d\t \n",i);
+  }
+
 
 
 
