@@ -36,6 +36,17 @@ int main(void) {
     printf("%d\t \n",i);
   }
 
+   int origin = -1;
+        while(origin == -1){
+        printf("Insira o vértice inicial para buscar: ");
+        scanf("%d", &origin);
+
+        if(origin >= n || origin < 0){
+            printf("ERRO: Insira um vértice válido!\n");
+            origin = -1;
+        }
+    }
+
 
 
 
