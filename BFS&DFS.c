@@ -42,7 +42,7 @@ int main(void) {
         scanf("%d", &origin);
 
         if(origin >= n || origin < 0){
-            printf("ERRO: Insira um vértice válido!\n");
+            printf(" Insira um vértice válido!\n");
             origin = -1;
         }
 
@@ -52,12 +52,14 @@ int main(void) {
       scanf("%d", &destiny);
 
       if(destiny >= n || destiny < 0){
-          printf("ERRO: Insira um vértice válido!\n");
+          printf(" Insira um vértice válido!\n");
           destiny = -1;
         }
     }
     
   //bfs(v);
+
+  // Não consigo terminar a parte DFS neste código pois implementei a parte BFS
   
 
   return 0;
