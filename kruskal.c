@@ -110,4 +110,14 @@ void printList(Tab * tabela, int visitado){
         if(count == visitado){
             printf(" ← visitado");
         }
+         printf("\n");
+        if(aux->next != NULL){
+            aux = aux->next;
+        }
+        else{
+            break;
+        }
+        count++;
+    }while (aux);
+    printf("\n");
 }
