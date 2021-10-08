@@ -104,4 +104,10 @@ void printList(Tab * tabela, int visitado){
 
     printf("\n|\tpe\t|\tvi\t|\tva\t|\n");
     printf("|-------------------------------------|\n");
+
+    do {
+        printf("|\t%d\t|\t%d\t|\t%d\t|", aux->edge->weigth, aux->edge->origem->valor, aux->edge->destino->valor);
+        if(count == visitado){
+            printf(" ← visitado");
+        }
 }
