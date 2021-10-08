@@ -159,3 +159,12 @@ void printVControl(int * vControl, int n, int vi, int vj){
 
 
 }
+int findRoot(int * vControl, int pos){
+    int node = vControl[pos];
+    int root = pos;
+    while(node >= 0){
+        root = node;
+        node = vControl[node];
+    }
+    return root;
+}
