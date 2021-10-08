@@ -132,5 +132,18 @@ void printVControl(int * vControl, int n, int vi, int vj){
     strcat(h, "--------");
     strcat(imp, " \t");
 
+    for(int i = 0; i < n; i++){
+        if(i == vi || i == vj){
+            strcat(imp, " ↓\t");
+        }
+        else{
+            strcat(imp, "\t");
+        }
+
+        char ver[5] = "";
+        sprintf(ver, "%d", i);
+        strcat(head, ver);
+        strcat(head, "\t|");
+
 
 }
