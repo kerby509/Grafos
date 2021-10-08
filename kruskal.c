@@ -151,6 +151,11 @@ void printVControl(int * vControl, int n, int vi, int vj){
 
         strcat(h, "-------");
     }
+    strcat(h, "|");
+    printf("%s\n", imp);
+    printf("%s\n", head);
+    printf("%s\n", h);
+    printf("%s\n", line); 
 
 
 }
