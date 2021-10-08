@@ -144,6 +144,13 @@ void printVControl(int * vControl, int n, int vi, int vj){
         sprintf(ver, "%d", i);
         strcat(head, ver);
         strcat(head, "\t|");
+        char p[5] = "";
+        sprintf(p, "%d", vControl[i]);
+        strcat(line, p);
+        strcat(line, "\t|");
+
+        strcat(h, "-------");
+    }
 
 
 }
