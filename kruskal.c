@@ -39,5 +39,11 @@ void insira(Node * origem, Node * destino, int weigth, Tab * tabela){
     addEdge->edge = newEdge;
     addEdge->next = NULL;
     addEdge->prev = NULL;
+     if(tabela->head == NULL && tabela->tail == NULL){
+        addEdge->next = NULL;
+        addEdge->prev = NULL;
+        tabela->head = addEdge;
+        tabela->tail = addEdge;
+    }
 
 }
