@@ -96,3 +96,12 @@ void createList(int ** matAdj, int n, Tab * tabela){
         }
     }
 }
+
+void printList(Tab * tabela, int visitado){
+    Edges * aux = tabela->head;
+    int count = 0;
+    printf("\n\n************ Estado atual %d *************\n", visitado+1);
+
+    printf("\n|\tpe\t|\tvi\t|\tva\t|\n");
+    printf("|-------------------------------------|\n");
+}
