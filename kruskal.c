@@ -13,3 +13,9 @@ typedef struct {
     Node *origem;
     Node *destino;
 } Edge;
+
+struct list_edges{
+    Edge *edge;
+    struct list_edges *prev;
+    struct list_edges *next;
+};
