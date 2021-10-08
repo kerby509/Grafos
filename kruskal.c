@@ -168,3 +168,60 @@ int findRoot(int * vControl, int pos){
     }
     return root;
 }
+
+void kruskal(Tab * tabela, int n, int *vControl){
+    Edges * aux = tabela->head;
+    char path[100] = "\nAresta mínima:\n\t";
+    int visitado = 0;
+    int cost = 0;
+    while (aux) {
+        int vi = aux->edge->origem->valor;
+        int vj = aux->edge->destino->valor;
+
+        int rooti = findRoot(vControl, vi);
+        int rootj = findRoot(vControl, vj);
+
+        if(rooti == rootj){
+
+        }
+        else{
+            if(vControl[rootj] == vControl[rooti] || vControl[rootj] < vControl[rooti]){
+                vControl[rootj]+= vControl[rooti];
+                vControl[rooti] = rootj;
+            }
+            else if(vControl[rootj] > vControl[rooti]){
+                vControl[rooti] += vControl[rootj];
+                vControl[rootj] = rooti;
+            }
+            char temp[5] = "";
+            strcat(path, "(");
+
+            sprintf(temp, "%d", vi);
+            strcat(path, temp);
+            strcat(path, ",");
+
+            sprintf(temp, "%d", vj);
+            strcat(path, temp);
+            strcat(path, ") ");
+
+            cost+= aux->edge->weigth;
+        }
+        printList(tabela, visitado);
+        printVControl(vControl, n, vi, vj);
+        printf("%s\n", path);
+
+        if(vControl[rootj] == n*(-1) || vControl[rooti] == n*(-1)){
+            printf("\n\t→ Árvore encontrado :D\n");
+            printf("\tCusto Total: %d\n", cost);
+            return;
+        }
+
+        if(aux->next != NULL){
+            aux = aux->next;
+        }
+        else{
+            return;
+        }
+        visitado++;
+    }
+}
