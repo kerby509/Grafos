@@ -19,3 +19,10 @@ struct list_edges{
     struct list_edges *prev;
     struct list_edges *next;
 };
+
+typedef struct list_edges Edges;
+
+struct tabela_edges{
+    Edges * head;
+    Edges * tail;
+};
