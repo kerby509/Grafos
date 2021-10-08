@@ -121,3 +121,16 @@ void printList(Tab * tabela, int visitado){
     }while (aux);
     printf("\n");
 }
+
+void printVControl(int * vControl, int n, int vi, int vj){
+    char imp[100] = "";
+    char h[100] = "";
+    char head[100] = "";
+    char line[100] = "";
+    strcat(head, "Vert\t|");
+    strcat(line, "P\t|");
+    strcat(h, "--------");
+    strcat(imp, " \t");
+
+
+}
