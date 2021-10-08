@@ -239,5 +239,12 @@ int main(){
     for(int i = 0; i < n; i++){
         matAdj[i] = malloc(sizeof(int)*n);
     }
+    //criar a matriz aqui
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            printf("Digita o valor %d, %d: ", i,j);
+            scanf("%d", &matAdj[i][j]);
+        }
+    }
 
 }
