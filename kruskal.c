@@ -225,3 +225,19 @@ void kruskal(Tab * tabela, int n, int *vControl){
         visitado++;
     }
 }
+
+int main(){
+    int ** matAdj;
+    int n;
+    int * vControl;
+
+    printf("Digita o número de vértices: ");
+    scanf("%d", &n);
+
+    //Criando a Matriz de adjacencia
+    matAdj = (int **) malloc(sizeof(int *)*n);
+    for(int i = 0; i < n; i++){
+        matAdj[i] = malloc(sizeof(int)*n);
+    }
+
+}
