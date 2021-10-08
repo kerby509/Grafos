@@ -171,7 +171,7 @@ int findRoot(int * vControl, int pos){
 
 void kruskal(Tab * tabela, int n, int *vControl){
     Edges * aux = tabela->head;
-    char path[100] = "\nAresta mínima:\n\t";
+    char path[100] = "\nCaminho até:\n\t";
     int visitado = 0;
     int cost = 0;
     while (aux) {
@@ -211,8 +211,8 @@ void kruskal(Tab * tabela, int n, int *vControl){
         printf("%s\n", path);
 
         if(vControl[rootj] == n*(-1) || vControl[rooti] == n*(-1)){
-            printf("\n\t→ Árvore encontrado :D\n");
-            printf("\tCusto Total: %d\n", cost);
+            printf("\n\t→ Caminho até :\n");
+            printf("\tCusto: %d\n", cost);
             return;
         }
 
