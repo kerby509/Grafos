@@ -35,4 +35,9 @@ void insira(Node * origem, Node * destino, int weigth, Tab * tabela){
     newEdge->destino = destino;
     newEdge->weigth = weigth; 
 
+    Edges * addEdge = malloc(sizeof(Edges));
+    addEdge->edge = newEdge;
+    addEdge->next = NULL;
+    addEdge->prev = NULL;
+
 }
