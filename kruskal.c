@@ -259,6 +259,13 @@ int main(){
         }
         printf("\n");
     }
+    Tab * tabela = malloc(sizeof (Tab));
+    tabela->head = NULL;
+    tabela->tail = NULL;
+
+    createList(matAdj, n, tabela);  
+
+    kruskal(tabela, n, vControl);
 
 
 }
