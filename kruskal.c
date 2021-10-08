@@ -26,3 +26,13 @@ struct tabela_edges{
     Edges * head;
     Edges * tail;
 };
+
+typedef struct tabela_edges Tab;
+
+void insira(Node * origem, Node * destino, int weigth, Tab * tabela){
+    Edge * newEdge = malloc(sizeof(Edge));
+    newEdge->origem = origem;
+    newEdge->destino = destino;
+    newEdge->weigth = weigth; 
+
+}
