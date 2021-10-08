@@ -88,3 +88,11 @@ void createList(int ** matAdj, int n, Tab * tabela){
         for(int j = i; j < n; j++){
             if(matAdj[i][j] > 0){
                 Node * origem = malloc(sizeof(Node));
+                 Node * destino = malloc(sizeof(Node));
+                origem->valor = i;
+                destino->valor = j;
+                insira(origem, destino, matAdj[i][j], tabela);
+            }
+        }
+    }
+}
