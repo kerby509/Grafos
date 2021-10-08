@@ -247,4 +247,18 @@ int main(){
         }
     }
 
+     vControl = malloc(sizeof(int)*n);
+
+
+    printf("\n************************Matriz****** *********************\n");
+
+    for(int i = 0; i < n; i++){
+        vControl[i] = -1;  
+        for(int j = 0; j < n; j++){
+            printf("%d\t|", matAdj[i][j]);
+        }
+        printf("\n");
+    }
+
+
 }
