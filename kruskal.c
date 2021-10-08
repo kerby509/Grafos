@@ -82,3 +82,9 @@ void insira(Node * origem, Node * destino, int weigth, Tab * tabela){
     return;
 
 }
+
+void createList(int ** matAdj, int n, Tab * tabela){
+    for(int i = 0; i < n; i++){
+        for(int j = i; j < n; j++){
+            if(matAdj[i][j] > 0){
+                Node * origem = malloc(sizeof(Node));
