@@ -95,5 +95,14 @@ int main(){
         }
         printf("\n");
     }
+    int inicia;
+    printf("\nDigita o valor inicial: ");
+    scanf("%d", &inicia);
+
+    prim(matAdj, matTab, n, inicia);
+
+    printf("\n\n****************************** Prim ******************************\n\n");
+
+    printPrim(matTab, n, -1)
 
 }
