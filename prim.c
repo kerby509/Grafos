@@ -87,5 +87,13 @@ int main(){
             scanf("%d", &matAdj[i][j]);
         }
     }
+    printf("\n\n****************************** Matriz ******************************\n\n");
+
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            printf("%d\t|", matAdj[i][j]);
+        }
+        printf("\n");
+    }
 
 }
