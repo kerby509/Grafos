@@ -30,5 +30,9 @@ int smallest(int **matTab, int n){
             pos = i;
         }
     }
+     if(menor == INT_MAX){
+        return -1;
+    }
+    return pos;
 
 }
