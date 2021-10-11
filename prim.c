@@ -36,3 +36,13 @@ int smallest(int **matTab, int n){
     return pos;
 
 }
+
+void prim(int **matAdj, int **matTab, int n, int startValue){
+    int i = startValue;
+    matTab[i][2] = 0;
+    while(i < n){
+        printf("\n\n****************************** Visitando o vértice %d ******************************\n\n", i);
+        matTab[i][1] = 1;
+
+
+}
