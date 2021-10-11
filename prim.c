@@ -50,7 +50,14 @@ void prim(int **matAdj, int **matTab, int n, int startValue){
                 matTab[j][3] = i;
             }
         }
+        printPrim(matTab, n, i);
 
-
+        int menor = smallest(matTab, n);
+        if(menor == -1 || menor > n){
+            return;
+        }
+        i = menor;
+        getc(stdin);
+    }
 
 }
