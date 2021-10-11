@@ -20,3 +20,15 @@ void printPrim(int **matTab, int n, int visitado){
         printf("\n");
     }
 }
+
+int smallest(int **matTab, int n){
+    int menor = INT_MAX;
+    int pos;
+    for(int i = 0; i<n; i++){
+        if (matTab[i][1] != 1 && matTab[i][2] < menor){
+            menor = matTab[i][2];
+            pos = i;
+        }
+    }
+
+}
