@@ -61,3 +61,17 @@ void prim(int **matAdj, int **matTab, int n, int startValue){
     }
 
 }
+
+int main(){
+    int ** matAdj;
+    int ** matTab;
+    int n;
+    printf("Digita o numero do vértices: ");
+    scanf("%d", &n);
+
+    matAdj = (int **) malloc(sizeof(int *)*n);
+    for(int i = 0; i < n; i++){
+        matAdj[i] = malloc(sizeof(int)*n);
+    }
+
+}
