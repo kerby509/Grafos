@@ -103,6 +103,19 @@ int main(){
 
     printf("\n\n****************************** Prim ******************************\n\n");
 
-    printPrim(matTab, n, -1)
+    printPrim(matTab, n, -1);
+
+    int preco = 0;
+    printf("\nArestas que estão guardada:\n\t");
+    for(int i = 0; i < n; i++){
+        preco+=matTab[i][2];
+        if(matTab[i][3] == -1){
+
+        }
+        else{
+            printf("(%d,%d) ", matTab[i][0], matTab[i][3]);
+        }
+    }
+    printf("\n\n\tCusto: %d\n", preco);
 
 }
