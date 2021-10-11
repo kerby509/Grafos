@@ -14,3 +14,9 @@ void printPrim(int **matTab, int n, int visitado){
                 printf("\t%d\t|", matTab[i][j]);
             }
         }
+        if(i == visitado && visitado > -1 && visitado < n){
+            printf(" ← visitado");
+        }
+        printf("\n");
+    }
+}
