@@ -73,5 +73,19 @@ int main(){
     for(int i = 0; i < n; i++){
         matAdj[i] = malloc(sizeof(int)*n);
     }
+    matTab = (int **) malloc(sizeof(int *)*n);
+    for(int i = 0; i < n; i++){
+        matTab[i] = malloc(sizeof(int)*4);
+        matTab[i][0] = i;
+        matTab[i][1] = 0;
+        matTab[i][2] = INT_MAX;
+        matTab[i][3] = -1;
+    }
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            printf("Inira o valor %d, %d: ", i,j);
+            scanf("%d", &matAdj[i][j]);
+        }
+    }
 
 }
