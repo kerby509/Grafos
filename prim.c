@@ -44,5 +44,13 @@ void prim(int **matAdj, int **matTab, int n, int startValue){
         printf("\n\n****************************** Visitando o vértice %d ******************************\n\n", i);
         matTab[i][1] = 1;
 
+        for(int j = 0; j < n; j++){
+            if(matAdj[i][j] != 0 && matTab[j][1] != 1 && matAdj[i][j] < matTab[j][2]){
+                matTab[j][2] = matAdj[i][j];
+                matTab[j][3] = i;
+            }
+        }
+
+
 
 }
