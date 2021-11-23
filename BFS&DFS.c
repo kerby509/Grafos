@@ -59,7 +59,7 @@ int main(void) {
     
   //bfs(v);
 
-  // Não consigo terminar a parte DFS neste código pois implementei a parte BFS
+  // Não consigo terminar a parte DFS neste código pois implementei a parte BFS.
   
 
   return 0;
